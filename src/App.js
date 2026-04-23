@@ -18,6 +18,7 @@ function App() {
       console.log("✅ Backend Response:", res.data);
       alert("Login Successful ✅");
     } catch (error) {
+      console.log("error resonpnse ", error);
       console.error("❌ Error:", error.response?.data || error.message);
       alert("Login Failed ❌");
     }

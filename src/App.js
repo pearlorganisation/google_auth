@@ -10,14 +10,13 @@ function App() {
       console.log("✅ Google Token:", token);
 
       const res = await axios.post(
-        "http://localhost:8000/api/auth/google",
+        "https://lenstick-backend.onrender.com/api/v1/auth/google",
         { token },
         { withCredentials: true } // important for cookies
       );
 
       console.log("✅ Backend Response:", res.data);
       alert("Login Successful ✅");
-
     } catch (error) {
       console.error("❌ Error:", error.response?.data || error.message);
       alert("Login Failed ❌");
@@ -40,7 +39,7 @@ function App() {
 
 export default function Root() {
   return (
-    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+    <GoogleOAuthProvider clientId="1082896702010-duok6kd01l2fa49rukge819pmpatf7j4.apps.googleusercontent.com">
       <App />
     </GoogleOAuthProvider>
   );

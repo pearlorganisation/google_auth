@@ -39,7 +39,7 @@ function App() {
 
 export default function Root() {
   return (
-    <GoogleOAuthProvider clientId="1082896702010-duok6kd01l2fa49rukge819pmpatf7j4.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="1009752700096-ii2dusrtffr6r3t9b612lj2mr9doiqkr.apps.googleusercontent.com">
       <App />
     </GoogleOAuthProvider>
   );
